@@ -1,0 +1,19 @@
+package br.com.flaviovicentini.LessonJavaWeb.negocio;
+
+public abstract class Produto {
+	
+	private String nome;
+	private float valor;
+	private int codigo;
+	
+	public Produto(String nome, float valor, int codigo) {
+		this.nome = nome;
+		this.valor = valor;
+		this.codigo = codigo;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("Produto=[%s, %.2f, %d]", nome, valor, codigo);
+	}
+}
