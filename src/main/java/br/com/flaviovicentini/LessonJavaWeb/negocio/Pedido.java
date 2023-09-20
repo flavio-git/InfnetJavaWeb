@@ -16,6 +16,6 @@ public class Pedido {
 
 	@Override
 	public String toString() {
-		return "Pedido[descricao=" + descricao + ", data=" + data + ", isWeb= " + isWeb + "]";
+		return String.format("Pedido=[%s, %s, %s]", descricao, data, isWeb);
 	}
 }
